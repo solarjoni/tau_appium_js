@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:dialog": "./node_modules/.bin/wdio ./wdio.conf.js --spec ./test/specs/dialog.test.js",
+    "test:activity": "./node_modules/.bin/wdio ./wdio.conf.js --spec ./test/specs/cancelDialogActivity.test.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,12 +13,10 @@
     "@wdio/cli": "^7.16.14"
   },
   "devDependencies": {
-    "@wdio/dot-reporter": "^7.16.14",
     "@wdio/local-runner": "^7.16.14",
     "@wdio/mocha-framework": "^7.16.14",
+    "@wdio/selenium-standalone-service": "^7.16.14",
     "@wdio/spec-reporter": "^7.16.14",
-    "chromedriver": "^97.0.2",
-    "wdio-chromedriver-service": "^7.2.6",
-    "wdio-wait-for": "^2.2.1"
+    "chai": "^4.3.6"
   }
 }
