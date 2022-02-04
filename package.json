@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "./node_modules/.bin/wdio ./wdio.conf.js",
     "test:dialog": "./node_modules/.bin/wdio ./wdio.conf.js --spec ./test/specs/dialog.test.js",
     "test:activity": "./node_modules/.bin/wdio ./wdio.conf.js --spec ./test/specs/cancelDialogActivity.test.js"
   },

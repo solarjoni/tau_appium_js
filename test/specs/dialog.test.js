@@ -69,11 +69,11 @@ describe('Dialog', async () => {
             console.log('isSelected:', await isSelected)
             console.log('isDisplayed:', await isDisplayed)
 
-            // if (await isEnabled && await isSelected) {
+            if (await isEnabled && await isSelected) {
                 console.log("Tab 1 isDisplayed:", await dialog.tab1Details.isDisplayed())
                 console.log("Tab 2 isDisplayed:", await dialog.tab2Details.isDisplayed())
                 console.log("Tab 3 isDisplayed:", await dialog.tab3Details.isDisplayed())
-            // }
+            }
         }
     })
 

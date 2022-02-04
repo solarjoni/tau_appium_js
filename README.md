@@ -1,1 +1,1 @@
-Use tests separately.
+Simple appium javascript tests with webdriverio.
