@@ -14,21 +14,21 @@ describe('Cancel Dialogs', async () => {
     
     it('Verify that the cancel dialog short message is correct and displays', async () => {
         await dialog.cancelDialogMsgBtn.click()
-        expect(await dialog.getDialogModalTitle()).equal(await data.shortCancelDialog.title)
+        expect(await dialog.getDialogModalTitle()).equal(data.shortCancelDialog.title)
         await dialog.dialogOkBtn.click()
     })
     
     it('Verify that the cancel dialog long message is correct and displays', async () => {
         await dialog.cancelLongDialogMsgBtn.click()
-        expect(await dialog.getDialogModalTitle()).equal(await data.longCancelDialog.title);
-        expect(await dialog.getDialogModalMsg()).equal(await data.longCancelDialog.msg)
+        expect(await dialog.getDialogModalTitle()).equal(data.longCancelDialog.title);
+        expect(await dialog.getDialogModalMsg()).equal(data.longCancelDialog.msg)
         await dialog.dialogOkBtn.click()
     })
     
     it('Verify that the cancel dialog ultra long message is correct', async () => {
         await dialog.cancelUltraLongDialogMsgBtn.click()
-        expect(await dialog.getDialogModalTitle()).equal(await data.ultraLongCancelDialog.title)
-        expect(await dialog.getDialogModalMsg()).equal(await data.ultraLongCancelDialog.msg)
+        expect(await dialog.getDialogModalTitle()).equal(data.ultraLongCancelDialog.title)
+        expect(await dialog.getDialogModalMsg()).equal(data.ultraLongCancelDialog.msg)
         await dialog.dialogOkBtn.click()
     })
 
